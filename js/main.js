@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".menu-item").mouseenter(function() {
+    $(".menu-item").click(function() {
         $(".test").slideToggle();
     });
 });
