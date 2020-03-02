@@ -59,9 +59,18 @@ header {
     height: 40px;
 }
 
+.menu-item.caret::after {
+    content: "\f150";
+    font-family: "Font Awesome 5 Free";
+}
+
+.menu-item.caret.active::after {
+    content: "\f151";
+    font-family: "Font Awesome 5 Free";
+}
+
 .menu-item:hover,.dropdown-menu-item a:hover {
     border-bottom: 2px solid #61ce4e;
-
 }
 
 .dropdown-menu {
