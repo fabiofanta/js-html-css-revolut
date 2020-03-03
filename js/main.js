@@ -1,13 +1,13 @@
 $(document).ready(function () {
-    $(".menu-item").click(function() {
-        if ($(".menu-item").hasClass("active")) {
-            $(".menu-item").children().removeClass("active");
+    $(".caret").click(function() {
+        if ($(this).hasClass("active")) {
+            $(this).children().toggleClass("active");
             $(".caret").removeClass("active");
-            $(this).children().addClass("active");
-            $(this).addClass("active");
 
         } else {
-            $(this).children().addClass("active");
+            $(".caret").children().removeClass("active");
+            $(this).children().toggleClass("active");
+            $(".caret").removeClass("active");
             $(this).addClass("active");
         }
 
